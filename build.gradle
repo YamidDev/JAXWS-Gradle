@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+apply plugin: 'war'
+apply plugin: 'eclipse-wtp'
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/com.sun.xml.ws/jaxws-rt
+    implementation group: 'com.sun.xml.ws', name: 'jaxws-maven-plugin', version: '2.3.3'
+
+    compile 'org.apache.cxf:cxf-rt-frontend-jaxws:3.2.7'
+    compile 'org.apache.cxf:cxf-rt-transports-http:3.2.7'
+    compile 'org.springframework:spring-core:5.0.7.RELEASE'
+    compile 'org.springframework:spring-context:5.0.7.RELEASE'
+    compile 'org.springframework:spring-web:5.0.7.RELEASE'
+
+    testImplementation 'junit:junit:4.12'
+}
+
+test {
+    useJUnitPlatform()
+}

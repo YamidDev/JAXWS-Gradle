@@ -1,0 +1,4 @@
+com/yamidev/examples/jaxws/RandomQuoteServiceImpl.java
+ com.yamidev.examples.jaxws.RandomQuoteServiceImpl
+com/yamidev/examples/jaxws/RandomQuoteService.java
+ com.yamidev.examples.jaxws.RandomQuoteService
